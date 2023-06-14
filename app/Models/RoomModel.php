@@ -4,16 +4,16 @@ namespace App\Models;
 
 use CodeIgniter\Model;
 
-class KamarModel extends Model
+class RoomModel extends Model
 {
     protected $DBGroup          = 'default';
-    protected $table            = 'kamar';
+    protected $table            = 'rooms';
     protected $primaryKey       = 'id';
     protected $useAutoIncrement = true;
     protected $returnType       = 'array';
     protected $useSoftDeletes   = false;
     protected $protectFields    = true;
-    protected $allowedFields    = [];
+    protected $allowedFields    = ['image', 'name', 'qty', 'price'];
 
     // Dates
     protected $useTimestamps = false;

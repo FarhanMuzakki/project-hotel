@@ -14,37 +14,26 @@
 
   <div id="price" class="container">
     <div class="row mb-5">
-      <div class="col-md-4">
-        <div class="card">
-          <img src='assets\pic\kamar3.jpg' class="card-img-top" alt="...">
-          <div class="card-body text-center">
-            <h5 class="card-title">River View Suite</h5>
-            <p class="card-text">Rp.500.000</p>
-            <a href="#" class="btn btn-primary">Booking Now!</a>
+
+      <?php foreach ($kamar as $k) : ?>
+
+        <div class="col-md-4">
+          <div class="card">
+            <img src='img/<?= $k['image'] ?>' class="card-img-top" alt="...">
+            <div class="card-body text-center">
+              <h5 class="card-title"><?= $k['name'] ?></h5>
+              <p class="card-text"><?= $k['price'] ?></p>
+              <a href="#" class="btn btn-primary">Booking Now!</a>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="col-md-4">
-        <div class="card">
-          <img src='assets\pic\kamar2.jpg' class="card-img-top" alt="...">
-          <div class="card-body text-center">
-            <h5 class="card-title">Riverview Executive Room</h5>
-            <p class="card-text">Rp.1.000.000</p>
-            <a href="#" class="btn btn-primary">Booking Now!</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="card">
-          <img src='assets\pic\kamar4.png' class="card-img-top" alt="...">
-          <div class="card-body text-center">
-            <h5 class="card-title">Riverfront Premier Room</h5>
-            <p class="card-text">Rp.1.500.000</p>
-            <a href="#" class="btn btn-primary">Booking Now!</a>
-          </div>
-        </div>
-      </div>
+
+
+      <?php endforeach; ?>
+
     </div>
+
+
   </div>
 
   <?php $this->endSection(); ?>

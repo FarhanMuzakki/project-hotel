@@ -15,6 +15,7 @@ $routes->setDefaultController('Home');
 $routes->setDefaultMethod('index');
 $routes->setTranslateURIDashes(false);
 $routes->set404Override();
+$routes->setAutoRoute(true);
 // The Auto Routing (Legacy) is very dangerous. It is easy to create vulnerable apps
 // where controller filters or CSRF protection are bypassed.
 // If you don't want to define all routes, please use the Auto Routing (Improved).
@@ -38,6 +39,9 @@ $routes->get('pages/about', 'Pages::about');
 $routes->get('pages/login', 'Pages::login');
 $routes->get('pages/signup', 'Pages::signup');
 $routes->get('pages/kamar', 'Pages::kamar');
+$routes->get('kamar/add', 'Kamar::add');
+$routes->get('kamar/list', 'Kamar::list');
+$routes->get('kamar/insert', 'Kamar::insert');
 /*
  * --------------------------------------------------------------------
  * Additional Routing

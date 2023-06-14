@@ -16,6 +16,17 @@
       scroll-behavior: smooth;
     }
 
+    .list-kamar {
+      margin-top: 5rem;
+    }
+
+    .form-controller {
+      margin-top: 4rem;
+      margin: 2rem;
+      padding: 20vh 20vw;
+      background-color: #fff;
+    }
+
     #price {
       box-shadow: 2px black;
       border-radius: 2%;
@@ -24,8 +35,9 @@
     }
 
     body {
-      background-image: url('https://hmghospitality.com/wp-content/uploads/2017/01/HMG-Hotel-Lobby-1920x720.jpg');
+      /* background-image: url('https://hmghospitality.com/wp-content/uploads/2017/01/HMG-Hotel-Lobby-1920x720.jpg'); */
       background-size: cover;
+      background-repeat: no-repeat;
       background-position: center;
     }
 
@@ -62,6 +74,7 @@
           <li><a href="/" class="nav-link px-2 text-secondary">Home</a></li>
           <li><a href="#price" class="nav-link px-2 text-white">Pricing</a></li>
           <li><a href="/pages/about" class="nav-link px-2 text-white">About</a></li>
+          <li><a href="/kamar/list" class="nav-link px-2 text-white">Room</a></li>
         </ul>
 
         <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
@@ -82,11 +95,7 @@
 
 
 
-  <footer class="footer mt-auto py-3 bg-body-tertiary">
-    <div class="container">
-      <span class="text-body-secondary">Place sticky footer content here.</span>
-    </div>
-  </footer>
+
   </main>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 

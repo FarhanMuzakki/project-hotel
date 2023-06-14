@@ -2,12 +2,24 @@
 
 namespace App\Controllers;
 
+use App\Models\RoomModel;
+
 class Pages extends BaseController
 {
+
+    protected $roomModel;
+
+
+    public function __construct()
+    {
+        $this->roomModel = new RoomModel();
+    }
+
     public function index()
     {
         $data = [
-            'title' => 'Home'
+            'title' => 'Home',
+            'kamar' => $this->roomModel->paginate(3)
         ];
         return view('pages/home', $data);
     }
